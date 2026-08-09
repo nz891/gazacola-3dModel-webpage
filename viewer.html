@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content=device-width, initial-scale=1.0" />
+    <title>Viewer | Gaza Cola</title>
+
+    <!-- Bootstrap for layout -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts same as all other pages -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Three.js import map -->
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+        }
+      }
+    </script>
+  </head>
+  <body class="site-body-light gc-viewer-body">
+
+    <!-- header just the hamburger-->
+    <header class="gc-header gc-header-minimal sticky-top">
+      <div class="container-fluid gc-header-container">
+        <div class="gc-header-bar gc-header-bar-minimal">
+          <button
+            class="gc-menu-btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#viewerMenu"
+            aria-controls="viewerMenu"
+            aria-label="Open menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- nav menu -->
+    <div
+      class="offcanvas offcanvas-start gc-offcanvas"
+      tabindex="-1"
+      id="viewerMenu"
+      aria-labelledby="viewerMenuLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="viewerMenuLabel">Menu</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <nav class="gc-menu-nav">
+          <a href="./index.html">Home</a>
+          <a href="./viewer.html?product=red-can">Red Gaza Cola Can</a>
+          <a href="./viewer.html?product=white-bottle">White Palaestine Cola Bottle</a>
+          <a href="./viewer.html?product=white-can">White Palestine Cola Can</a>
+          <a href="./about.html">About</a>
+        </nav>
+      </div>
+    </div>
+
+    <main class="gc-viewer-page-light">
+      <div class="container-fluid gc-viewer-container-wide">
+
+        <!-- the title which is updated by viewer.js when you switch products -->
+        <section class="gc-viewer-hero gc-viewer-hero-pro text-center">
+          <span class="gc-overline">3d model</span>
+          <h1 id="selectedProductTitle">Red Gaza Cola Can</h1>
+        </section>
+
+        <section class="gc-viewer-stage-wrap">
+          <div class="gc-viewer-stage-card">
+
+            <!-- Top bar with product dropdown and loading status -->
+            <div class="gc-viewer-topbar">
+              <select id="productSelector" class="form-select gc-inline-select">
+                <option value="red-can">Gaza Cola Can</option>
+                <option value="white-bottle">Palestine Cola Bottle</option>
+                <option value="white-can">Palestine Cola Can</option>
+              </select>
+
+               <!-- aria-live to show loading state -->
+              <div
+                class="gc-inline-status"
+                id="modelSourceLabel"
+                aria-live="polite"
+              >
+                Loading 3D model...
+              </div>
+            </div>
+
+            <!-- main grid  -->
+            <div class="gc-viewer-stage-grid">
+
+              <!-- Three.js canvas goes in here viewer.js injects the canvas element -->
+              <div class="gc-viewer-model-panel">
+                <div id="threeCanvasContainer"></div>
+              </div>
+
+              <!-- Side panel with product image, controls below -->
+              <aside class="gc-viewer-side-panel">
+
+                <!-- Product preview image, i hide this on mobile so you can see the model and the buttons without scrolling down -->
+                <div class="gc-viewer-preview-card">
+                  <div class="gc-viewer-preview-label" id="heroImageLabel">
+                    Gaza Cola Can
+                  </div>
+                  <div class="gc-viewer-preview-image-wrap">
+                    <img
+                      id="heroProductImage"
+                      src="./assets/images/red-can.png"
+                      alt="Selected product preview"
+                      class="gc-viewer-preview-image"
+                    />
+                  </div>
+                </div>
+
+                 <!-- controls card with five buttons -->
+                <div class="gc-controls-card">
+                  <div class="gc-controls-title">Controls</div>
+
+                  <div class="gc-controls-grid">
+                    <button
+                      class="btn gc-primary-btn gc-control-btn"
+                      id="capToggleBtn"
+                      type="button"
+                    >
+                      Open Cap
+                    </button>
+
+                    <button
+                      class="btn gc-outline-red-btn gc-control-btn"
+                      id="wireframeBtn"
+                      type="button"
+                    >
+                      Wireframe
+                    </button>
+
+                    <button
+                      class="btn gc-primary-btn gc-control-btn"
+                      id="rotateBtn"
+                      type="button"
+                    >
+                      Auto Rotate
+                    </button>
+
+                    <button
+                      class="btn gc-outline-red-btn gc-control-btn"
+                      id="lightingBtn"
+                      type="button"
+                    >
+                      Studio Light
+                    </button>
+
+                    <button
+                      class="btn gc-soft-btn gc-control-btn"
+                      id="resetBtn"
+                      type="button"
+                    >
+                      Reset View
+                    </button>
+                  </div>
+
+                  <div class="gc-controls-note">
+                    Drag to rotate the product. Use mouse wheel to zoom in and
+                    out. Studio Light cycles through dramatic lighting presets.
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="gc-footer-light">
+      <div class="container text-center">
+        <p class="mb-1">Taste of Freedom</p>
+        <small>My 3d model</small>
+      </div>
+    </footer>
+
+       <!-- Bootstrap JS for the offcanvas menu -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- viewer.js with all the Three.js logic -->
+    <script type="module" src="./js/viewer.js"></script>
+  </body>
+</html>

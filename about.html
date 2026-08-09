@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Gaza Cola</title>
+
+     <!-- bootstrap for the grid and layout -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+     <!-- google fonts Cormorant Garamond for headings, Inter for body, Great Vibes for title -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+      <!-- custom CSS with all the brand colours and styling -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="site-body-light">
+
+        <!-- header for all pages, links back to homepage when you click the brand name -->
+    <header class="gc-header sticky-top">
+      <div class="container-fluid gc-header-container">
+        <div class="gc-header-bar">
+          <button
+            class="gc-menu-btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#aboutMenu"
+            aria-controls="aboutMenu"
+            aria-label="Open menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <a href="./index.html" class="gc-brand text-decoration-none">
+            <span class="gc-brand-en">Cola Gaza</span>
+            <span class="gc-brand-divider"></span>
+            <span class="gc-brand-ar">غزة كولا</span>
+          </a>
+
+          <div class="gc-header-actions">
+            <a
+              href="./viewer.html?product=red-can"
+              class="gc-icon-btn text-decoration-none"
+              aria-label="Viewer"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M6 8h12l-1 11H7L6 8Z"></path>
+                <path d="M9 8a3 3 0 0 1 6 0"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- offcanvas nav menu (Bootstrap handles the open/close) -->
+    <div
+      class="offcanvas offcanvas-start gc-offcanvas"
+      tabindex="-1"
+      id="aboutMenu"
+      aria-labelledby="aboutMenuLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="aboutMenuLabel">Menu</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <nav class="gc-menu-nav">
+          <a href="./index.html">Home</a>
+          <a href="./viewer.html?product=red-can">Gaza Cola Can</a>
+          <a href="./viewer.html?product=white-bottle">Palestine Cola Bottle</a>
+          <a href="./viewer.html?product=white-can">Palestine Cola Can</a>
+          <a href="./about.html">About</a>
+        </nav>
+      </div>
+    </div>
+
+    <main class="gc-about-page">
+      <section class="gc-about-top">
+        <div class="container">
+          <div class="text-center gc-about-heading">
+            <span class="gc-overline">About!!!</span>
+            <h1>Taste of Freedom</h1>
+            <p>
+              Candidate id: 281453
+            </p>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="gc-about-content">
+        <div class="container">
+
+          <!-- here we begin with why i chose this design -->
+          <div class="row g-4 align-items-stretch">
+            <div class="col-lg-7">
+              <article class="gc-about-card h-100 gc-about-main-card">
+                <span class="gc-overline">Background</span>
+                <h2>Why Gaza Cola?</h2>
+                </p>
+                 When I first started thinking about what product to create for this assignment, my initial idea was to model a perfume bottle, gain the creativity points for it not being cans and call it a day.
+                 However after thinking about it I decided I wanted to use this project for something more personal and meaningful to me.
+                 I am Palestinian, and I wanted to use this assignment as an opportunity to represent my heritage and identity.
+                </p>
+                  As a Palestinian I am aware of the privilege I have in being here, the privilege to study, to learn, the privilege to complain about coursework and projects, opportunities that many do not have. 
+                  The difference between me and them is geographic luck. 
+                  In another world, I do not posses this privilege, in another world I am amongst them dreaming of the endless possibilities this world has robbed me of.
+                  
+                  This project became more than just an assignment. It became a way to represent something I care so deeply about.
+                </p>
+                  Gaza Cola is a real brand created by Palestine House, a Palestinian cultural organisation based in London, where 100% of profits go to humanitarian projects in Palestine. https://gazacola.shop/ and https://palestine-cola.co.uk/
+                  </p>
+                  I hope this project speaks to you as much as it does to me. It was so wonderful to do this and i am so grateful to get the chance to showcase this.
+                  </p>
+                  What a lovely taste of freedom. 
+                  </p>
+                  Thank you!!!
+                  </p>
+                </p>
+
+                <div class="gc-about-actions">
+                  <a href="./viewer.html?product=red-can" class="btn gc-primary-btn">
+                    Click here to view the models!!!
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <!-- adding pictures, from pintrest -->
+            <div class="col-lg-5">
+              <article class="gc-about-card h-100 gc-about-visual-card">
+                <img
+                  src="./assets/images/collage.jpg"
+                  alt="Gaza Cola project visual"
+                  class="gc-about-photo"
+                />
+              </article>
+            </div>
+          </div>
+
+          <!-- 3 mini cards for a quick overview -->
+          <div class="row g-4 mt-1">
+            <div class="col-md-4">
+              <article class="gc-about-mini-card">
+                <h3>Built With</h3>
+                <p>
+                  Three.js r160 for the 3D viewer, Bootstrap 5 for the for the layout and responsive grid, 
+                  custom CSS with a variable system for all brand colours and typography. 
+                  3 Google Fonts: Cormorant Garamond for the headings, Inter for the body text, Great Vibes for the Taste of Freedom title. 
+                
+                </p>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="gc-about-mini-card">
+                <h3>3D Viewer</h3>
+                <p>
+                  The models I made in Blender get loaded into the website as .glb files using Three.js GLTFLoader. 
+                  The drag and zoom using OrbitControls, the animations using AnimationMixer (which plays them forward to open and backwards to close). 
+                  The wireframe button swaps the real materials out for MeshBasicMaterial to make sure it shows clean with the lighting.
+                  There's 3 lighting moods using DirectionalLights that you can cycle through.
+                  The Audio when you open the cans and bottle is using the Web Audio API.
+                  
+                </p>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <article class="gc-about-mini-card">
+                <h3>3D Modelling</h3>
+                <p>
+                  Built in Blender using Bezier curves and Circle curves with the Screw modifier instead of basic mesh primitives like in the labs. 
+                  The lid and cap are separate objects so they animate independently. 
+                  UV unwrapped, textured and keyframe animated in Blender before exporting as individual .glb files 
+                
+                </p>
+              </article>
+            </div>
+          </div>
+
+           <!-- Labels section explaining why I used ChatGPT to create them and showing the fkat labels -->
+          <section class="gc-labels-showcase">
+            <div class="gc-section-heading text-center">
+              <span class="gc-overline">Label Design</span>
+              <h2>Custom labels created for the model</h2>
+              <p>
+                When I decided on the creative choice of doing Gaza Cola and Palestine Cola instead of regular soda cans,
+                I looked all over for the specific labels and unfortunately they werent available online. I messaged the brands in hopes 
+                of retrieveing the real labels for a cleaner model however I was not successful in getting any response back from them.
+                In order to combat this I used chat gpt and uploaded pictures of the products from the front and back to generate a flat label. 
+                The problem with this is that as much I tried to make it perfect, chat gpt still couldn't capture the proper kiffiyeh pattern on the top oF the Gaza can 
+                which is very upsetting. 
+                (confirmed and asked Daniel Creed about whether i should put the prompts used and he said this is good and i dont need to :)    )
+              
+              </p>
+            </div>
+
+            <div class="row g-4">
+              <div class="col-lg-4 col-md-6">
+                <article class="gc-label-card h-100">
+                  <div class="gc-label-image-wrap">
+                    <img
+                      src="./assets/images/label1.png"
+                      alt="Custom label design 1"
+                      class="gc-label-image"
+                    />
+                  </div>
+                  <div class="gc-label-card-content">
+                    <span class="gc-label-tag">Label 01</span>
+                    <h3>Gaza Cola Can label</h3>
+                    <p>
+                      Generated using ChatGPT
+                    
+                    </p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <article class="gc-label-card h-100">
+                  <div class="gc-label-image-wrap">
+                    <img
+                      src="./assets/images/label2.png"
+                      alt="Custom label design 2"
+                      class="gc-label-image"
+                    />
+                  </div>
+                  <div class="gc-label-card-content">
+                    <span class="gc-label-tag">Label 02</span>
+                    <h3>Palestine Cola Bottle Label</h3>
+                    <p>
+                      Generated using ChatGPT
+                    </p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-lg-4 col-md-12">
+                <article class="gc-label-card h-100">
+                  <div class="gc-label-image-wrap">
+                    <img
+                      src="./assets/images/label3.png"
+                      alt="Custom label design 3"
+                      class="gc-label-image"
+                    />
+                  </div>
+                  <div class="gc-label-card-content">
+                    <span class="gc-label-tag">Label 03</span>
+                    <h3>Palestine Cola Can Label</h3>
+                    <p>
+                      
+                      Generated using ChatGPT
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <!-- here i added the blender screenshots showing the 4 different views -->
+          <section class="gc-modeling-views">
+            <div class="gc-section-heading text-center">
+              <span class="gc-overline">3D Models</span>
+              <h2>Behind The Scenes on Blender</h2>
+              <p> Showcasing front, back, solid and wireframe perspectives from Blender (I deliberately left my first bottle attempt 
+                in the scene next to the final version so you can see my trial and error process. The one in the far edge is the final model with
+                with the cap in the air, its white-bottle in the vs code).</p>
+                <P> Click on picture to view :)</P>
+            </div>
+
+            <div class="row g-4">
+              <div class="col-lg-3 col-md-6">
+                <article class="gc-model-card h-100">
+                  <div class="gc-model-image-wrap">
+                    <a href="./assets/images/front.png" target="_blank">
+                    <img
+                      src="./assets/images/front.png"
+                      alt="Front view of Gaza Cola 3D model"
+                      class="gc-model-image"
+                      style="cursor: pointer;"
+                    />
+                    </a>
+                  </div>
+                  <div class="gc-model-card-content">
+                    <span class="gc-model-tag">View 01</span>
+                    <h3>Front Material View</h3>
+                    <p>in Material Preview mode. You can see the red Gaza Cola can, the white Palestine can and the bottle all together with the textures applied.</p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-lg-3 col-md-6">
+                <article class="gc-model-card h-100">
+                  <div class="gc-model-image-wrap">
+                    <a href="./assets/images/back.png" target="_blank">
+                    <img
+                      src="./assets/images/back.png"
+                      alt="Back view of Gaza Cola 3D model"
+                      class="gc-model-image" 
+                      style="cursor: pointer;"
+                    />
+                    </a>
+                  </div>
+                  <div class="gc-model-card-content">
+                    <span class="gc-model-tag">View 02</span>
+                    <h3>Back Material View</h3>
+                    <p>Back of the models showing the details of the material.</p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-lg-3 col-md-6">
+                <article class="gc-model-card h-100">
+                  <div class="gc-model-image-wrap">
+                    <a href="./assets/images/object.png" target="_blank">
+                    <img
+                      src="./assets/images/object.png"
+                      alt="Solid view of Gaza Cola 3D model"
+                      class="gc-model-image"
+                      style="cursor: pointer;"
+                    />
+                    </a>
+                  </div>
+                  <div class="gc-model-card-content">
+                    <span class="gc-model-tag">View 03</span>
+                    <h3>Solid View</h3>
+                    <p> Solid view really showing what went wrong with the trial bottle.</p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-lg-3 col-md-6">
+                <article class="gc-model-card h-100">
+                  <div class="gc-model-image-wrap">
+                    <a href="./assets/images/wireframe.png" target="_blank">
+                    <img
+                      src="./assets/images/wireframe.png"
+                      alt="Wireframe view of Gaza Cola 3D model"
+                      class="gc-model-image"
+                      style="cursor: pointer;"
+                    />
+                    </a>
+                  </div>
+                  <div class="gc-model-card-content">
+                    <span class="gc-model-tag">View 04</span>
+                    <h3>Wireframe View</h3>
+                    <p> Wireframe view showing Bezier curves structure, what you see in the browser when you press the wireframe button.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <!-- Main about section with all teh details and info, big card on the left, pictsures on the right -->
+          <section class="gc-process-section">
+            <div class="row g-4 align-items-stretch">
+              <div class="col-lg-8">
+                <article class="gc-about-card h-100">
+                  <span class="gc-overline">full breakdown</span>
+                  <h2>Heres the Full Breakdown!!</h2>
+
+                  <!-- 3D Models  -->
+
+                  <h3>The 3D Models</h3>
+                  <p>
+                    All 3 models were built in Blender and instead of starting with a basic 
+                    cylinder mesh like in the labs I used Bezier curves and Circle curves with the 
+                    Screw modifier and traced the silhouette and used the Screw modifier to spin it 
+                    360 degrees to make the 3d cylinder shape. I found it to be much easier than the labs.
+                    in the blender screenshots you can see theres 4 models, the one on the edge is the final bottle model that
+                    I use for the webapp, you can see the difference in the 2 bottles and how much cleaner the final model is in comparison.
+                    (make sure you zoom in when openning the .glb files :)   )
+                  </p>
+                  <p>
+                    The bottle body and cap are two separate objects with the body being Circle.001 
+                    and the cap is Circle.004, both made using Circle curves with the the Cap_Open.001 
+                    animation stored directly on Circle.004 in the outliner, that is the keyframe animation 
+                    that plays in the browser when you press Open Cap. The cans work the same way with the 
+                    body as a BezierCurve object and the lid as separate BezierCurve objects nested
+                    inside.
+                  </p>
+
+                   <!-- Loading -->
+
+                  <h3>Loading the Models</h3>
+                  <p>
+                    Once the models were exported from Blender as .glb files I loaded them into 
+                    the browser using Three.js GLTFLoader with DRACOLoader attached for compression. 
+                    I added three callbacks one for success, one for progress that updates 
+                    a live percentage on the loading overlay, and one for errors that triggers the error
+                    fallback. I also added a load token system so if you switch products 
+                    quickly before one finishes loading it cancels and doesnt overwrite the 
+                    new one. If something goes wrong and the model takes too long, it just shows the 
+                    fallback automatically instead of leaving the canvas blank. Once the first model 
+                    loads the other two quietly download in the background so when you switch 
+                    products it feels instant rather than having to wait.
+                  </p>
+
+                  <!-- Camera  -->
+
+                  <h3>Camera and Scene</h3>
+                  <p>
+                    The camera uses a 27 degree field of view which gives it that natural product 
+                    photography look. A wide angle would make the can look distorted which would 
+                    look wrong. I applied ACESFilmic tone mapping which is basically a colour 
+                    grading setting and it makes the lighting look more like realistic instead of 
+                    flat. The scene has fog and a large backdrop sphere so the background fades out 
+                    naturally rather than just cutting off.
+                  </p>
+
+                  <!-- OrbitControls -->
+
+                  <h3>OrbitControls and Zoom</h3>
+                  <p>
+                    Drag and zoom are handled by OrbitControls from Three.js. I customised it quite 
+                    a bit from the defaults. Pan is disabled so the product always stays centred. 
+                    Vertical rotation is limited so you cannot flip the model upside down. I also 
+                    customised the zoom to feel smooth rather than harsh and used Damping is enabled 
+                    on OrbitControls so when you stop scrolling or dragging it slows down gradually 
+                    instead of stopping quickly, which makes it feel more high quality.
+                  </p>
+
+                  <!-- Can opening -->
+
+                  <h3>The Can Opening</h3>
+                  <p>
+                    When you open can the tab gets pulled up which makes the the lid DOWN and inward like a hinge. 
+                    So I redesigned the animation to replicate this and I named the parts in Blender 
+                    as Can_Lid and Can_Tab so JavaScript could find them using getObjectByName and 
+                    move them completely independently from the rest of the can. When Open Cap button 
+                    is clicked the tab rotates up on the Z axis while the lid pivots 
+                    inward at the same time, Everything resets back to exactly where it started when 
+                    you press Reset View.
+                  </p>
+                    <pre><code>const lid = currentProductObject.getObjectByName("Can_Lid");
+                   const tab = currentProductObject.getObjectByName("Can_Tab");
+
+                    lid.rotation.z = -0.6;
+                    lid.position.x += 0.12;
+                    tab.rotation.z = -0.42;
+                    tab.position.x += 0.06;</code></pre>
+
+                    <!-- animation part showing i did the can opening/closing by putting it in forward then reverse using timeScale -->
+                    <h3>The Animation System</h3>
+                  <p>
+                    The opening animations were created in Blender using the keyframe timeline and 
+                    are stored inside the .glb files automatically on export and Three.js reads them 
+                    using AnimationMixer. I had the animation play forward to open and reversed it 
+                    to close instead of making two differnet animations by setting the timeScale to 
+                    negative one and starting from the end of the clip. clampWhenFinished is set to 
+                    true so the animation stops exactly at the open or closed position instead of 
+                    looping. isActionPlaying is set to true which to stop from pressing the button 
+                    again mid animation and pauses the floating idle animation so the two do not 
+                    conflict with each other.
+                  </p>
+                  <pre><code>// Open
+                  activeAction.timeScale = 1;
+                  activeAction.play();
+
+                 // Close
+                  activeAction.timeScale = -1;
+                  activeAction.time = activeClipDuration;
+                  activeAction.play();</code></pre>
+
+                   <!-- wireframe where i swap materials instead of just setting wireframe true showing deeper understanding!!
+                   i noticed in the https://users.sussex.ac.uk/~dtc27/Coke%20website/CocaCola example the wireframe is so hard to see so i found a way
+                    have it be crisp and clear so that lighting doesnt affect it  -->
+
+                 <h3>The Wireframe</h3>
+                 <p>
+                   I noticed in the https://users.sussex.ac.uk/~dtc27/Coke%20website/CocaCola example the 
+                   wireframe is so hard to see so I found a way have it be crisp and clear so that lighting 
+                   doesnt affect it. When each model loads I save all the original materials, and when wireframe is 
+                   toggled its creating new MeshBasicMaterial instances with wireframe enabled and put 
+                    it in. I chose to do it because it ignores lighting completely so the lines show 
+                    up clean so you can properly see the wireframe. keep in mind that the 
+                    original materials are never changed, just temporarily swapped it out and back in. 
+                    I had colours for the wirframes with dark red for the cans and grey for the white 
+                    bottle. What I like about it is that it is showing the real geometry from Blender, 
+                    the actual rings the Screw modifier generated which is pretty cool.
+                  </p>
+                  <pre><code>child.material = enabled
+                    ? child.userData.meshWireMaterials
+                    : child.userData.originalMaterials;</code></pre>
+
+                    <!-- Lighting using 5 lights and 3 different modes -->
+                  <h3>The Lighting System</h3>
+                  <p>
+                    I set up five lights in the Three.js scene: an ambient light, a hemisphere light, 
+                    a key directional light as the main source and casts shadows, a fill light on the 
+                    opposite side softens the shadows, a rim light from behind so the product stands 
+                    out from the background. I then added three lighting presets that cycle when the 
+                    Studio Light button is clicked. Default is balanced neutral white, Studio is 
+                    brighter and more professional, Sunset uses warm orange and golden tones with the 
+                    key light from a low side angle for golden hour. The button text updates to show 
+                    the current preset and Reset View always returns to Default.
+                  </p>
+
+                  <!-- Audio using Web Audio API, i found and downloaded the audios from youtube and converted them to mp3 to use  -->
+                    <h3>The Audio</h3>
+                  <p>
+                    Opening the can or bottle plays a sound using the browser's built in Web Audio 
+                    API instead of three.audiolistener like the labs. The audio loads in the background 
+                    when the page first opens using fetch and decodeAudioData
+                    so that it is ready before the user presses the button. The can and 
+                    bottle have different sound files because they sound different in real life. 
+                    (i got the sounds from youtube and coverted it to mp3, 
+                    this is for the bottle https://www.youtube.com/watch?v=nXXMFDlTu_c 
+                    and this audio for the cans https://www.youtube.com/watch?v=EPkYVHuXY8A )
+                    Each product has a soundType set to either can 
+                    or bottle and the correct sound plays automatically. The code also checks if the 
+                    AudioContext is suspended (which browsers do until the user interacts with the 
+                    page) and resumes it before playing.
+                  </p>
+                  <pre><code>audioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+                    const source = audioContext.createBufferSource();
+                    source.buffer = buffer;
+                    source.connect(audioContext.destination);
+                    source.start(0);</code></pre>
+
+                    <!-- Shadow using Canvas API not Three.js shadow mapping showing deeper understanding here too -->
+                <h3>The Shadow and Background</h3>
+                <p>
+                  Instead of relying solely on Three.js shadow mapping I created a soft 
+                  gradient shadow using the HTML Canvas API and placed it as a flat disc under 
+                  the model. It fades from dark in the centre to transparent in the edges. The 
+                  canvas background uses a radial gradient, lighter in the centre where the 
+                  models sit.
+                </p>
+
+                <!-- Floating animation using sine wave showing deeper understanding..-->
+                <h3>The Floating Animation</h3>
+                <p>
+                  When the model is just sitting there doing nothing it gently bobs up and down. 
+                  I did this using a sine wave on the Y position every frame. It pauses 
+                  automatically when auto rotate is on or when the opening animation is playing 
+                  so nothing clashes.
+                </p>
+              <pre><code>model.position.y = floatingBaseY + Math.sin(elapsed * 1.35) * 0.008;</code></pre>
+
+              <!-- Memory management where i dispose the models on switch also showing deeper understanding-->
+              <h3>Memory and Performance</h3>
+                <p>
+                Every time you switch product the old model is fully disposed from memory so 
+                the browser does not slow down over time. When you switch to another browser 
+                tab the animation clock pauses to save CPU and battery and then restarts when 
+                you come back. Event listeners handle WebGL context loss which can happen on 
+                mobile when the browser reclaims GPU memory, showing a message instead of 
+                silently breaking.
+                </p>
+
+                <!-- Design decisions aka fonts, colours, layout -->
+              <h3>Design Decisions</h3>
+              <p>
+                I used 3 Google Fonts: Cormorant Garamond for headings, Inter for body text, 
+                Great Vibes for the Taste of Freedom title because its similar to the Gaza Cola 
+                website. Displayed the header in both English Cola Gaza and Arabic غزة كولا. 
+                The brand name links back to the homepage following the standard web convention 
+                users expect (when you click on the title in about page it redirects you to the 
+                home page). The hamburger menu opens a Bootstrap offcanvas panel keeping the 
+                header clean across all screen sizes. In the homepage, the product image lifts 
+                on hover. Five buttons each use a different style, solid red for 
+                main actions, outline red for toggles and soft beige for resetguiding the 
+                user toward the most interesting interactions first. The olive branch sits in 
+                the homepage hero because the olive tree is one of the most recognised symbols 
+                of Palestinian identity and culture. The layout throughout the site uses Bootstrap 5's 
+                grid system for example the 4 Blender screenshots use col-lg-3 col-md-6 which 
+                means 4 cards sit side by side on desktop, 2 per row on tablet and 1 per row on mobile. 
+                Bootstrap handles all the responsive behaviour automatically and I then applied my own custom CSS
+                classes on top for the card styling, colours and typography.
+              </p>
+
+              <!-- Deeper understanding, beyond the labs -->
+              <h3>Deeper Understanding</h3>
+              <p>
+                Bezier curve and Screw modifier modelling instead of basic mesh. 
+                Web Audio API sound system instead of Three.js's built in audio system (THREE.AudioListener). 
+                15 second timeout fallback. 
+                For the wireframe I swapped the materials out for MeshBasicMaterial instead of
+                just setting wireframe true on the existing ones because MeshBasicMaterial ignores 
+                lighting so the lines always show up clean and crisp. 
+                Trigonometric automatic camera framing per product. 
+                Model prefetching for instant switching. 
+                WebGL context loss recovery.
+                Full GPU memory disposal on product switch. 
+                AnimationMixer reverse playback using timeScale negative one. 
+                Damping is enabled on OrbitControls so when you stop dragging or scrolling it slows down gradually 
+                which makes the whole interaction feel much smoother. 
+                HTML Canvas API procedural soft shadow. ACESFilmic tone mapping. 
+                Floating sine wave idle animation. 
+                Three lighting presets cycling through Default, Studio 
+                and Sunset.
+              </p>
+              </article>
+              </div>
+
+              <!-- images on the right of the breakdown -->
+              <div class="col-lg-4">
+                <article class="gc-about-card h-100 gc-wireframe-card">
+                  <img src="./assets/images/22.jpg" alt="22" style="width: 100%; border-radius: 12px; object-fit: cover;" />
+                  <img src="./assets/images/22.jpg" alt="Gaza Cola product" style="width: 100%; border-radius: 12px; object-fit: cover;" />
+                  <img src="./assets/images/2.jpg" alt="Gaza Cola product" style="width: 100%; border-radius: 12px; object-fit: cover;" />
+                  <img src="./assets/images/22.jpg" alt="22" style="width: 100%; border-radius: 12px; object-fit: cover;" />
+                  <img src="./assets/images/22.jpg" alt="22" style="width: 100%; border-radius: 12px; object-fit: cover; " />
+                  <img src="./assets/images/11.jpg" alt="22" style="width: 100%; border-radius: 12px; object-fit: cover; " />
+                </article>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- Testing section-->
+          <section class="gc-process-section mt-5"> 
+            <div class="row g-4">
+              <div class="col-12">
+                <article class="gc-about-card">
+                  <span class="gc-overline">Testing</span>
+                  <h2>Testing</h2>
+
+              <p>
+                Using the testing powerpoint on canvas, I conducted the following tests:
+              </p>
+
+              <!-- Functional testing -->
+              <h3>Functional Testing</h3>
+              <p>
+                I tested every interactive element to ensure it worked as intended. Open Cap, Wireframe, Auto Rotate, 
+                Studio Light and Reset View were all tested on the models. The close lid / close cap is a bit slow because its in reverse but
+                it functions properly. The product dropdown correctly switches between all three products and updates the URL. The 
+                menu opens and closes correctly on all pages. All navigation links were tested and go to the correct pages. 
+              </p>
+
+              <!-- Responsiveness testing using Chrome DevTools with screenshots -->
+              <h3>Responsiveness Testing</h3>
+              <p>
+                 Using Chrome DevTools I tested the layout at 375px mobile, 768px tablet and 1440px desktop. 
+                 The two column viewer layout collapsed to single column on smaller screens. The control buttons 
+                 are laid out correctly. The home and about pages displayed correctly with the text, images and cards all resizing.
+                 I made sure that the model page removes the image for the mobile size (375px) because in the mobile screen you want to 
+                 be able to press the buttons and see the models at the same time, not press the button and quickly scroll up to see the 
+                 animation because then the users will miss the animation completely. This test helped me fix that was what I had to fix that.
+                </p>
+              </p>
+              <p>375px...........</p>
+              <img 
+                  src="./assets/images/ss376.png" 
+                  alt="Viewer at 375px mobile" 
+                  style="width: 100%; border-radius: 12px; margin: 12px 0;"
+                />
+                <img 
+                  src="./assets/images/3ss376.png" 
+                  alt="Viewer at 375px mobile" 
+                  style="width: 100%; border-radius: 12px; margin: 12px 0;"
+                />
+                <img 
+                  src="./assets/images/2ss376.png" 
+                  alt="Viewer at 375px mobile" 
+                  style="width: 100%; border-radius: 12px; margin: 12px 0;"
+                />
+                <p>768px...........</p>
+                <img 
+                  src="./assets/images/ss768.png" 
+                  alt="Viewer at 375px mobile" 
+                  style="width: 100%; border-radius: 12px; margin: 12px 0;"
+                />
+                <img 
+                  src="./assets/images/3ss768.png" 
+                  alt="Viewer at 375px mobile" 
+                  style="width: 100%; border-radius: 12px; margin: 12px 0;"
+                />
+                <img 
+                  src="./assets/images/2ss768.png" 
+                  alt="Viewer at 375px mobile" 
+                  style="width: 100%; border-radius: 12px; margin: 12px 0;"
+                />
+                <p>1440px...........</p>
+                <img 
+                  src="./assets/images/ss1440.png" 
+                  alt="Viewer at 375px mobile" 
+                  style="width: 100%; border-radius: 12px; margin: 12px 0;"
+                />
+                <img 
+                  src="./assets/images/3ss1440.png" 
+                  alt="Viewer at 375px mobile" 
+                  style="width: 100%; border-radius: 12px; margin: 12px 0;"
+                />
+                <img 
+                  src="./assets/images/2ss1440.png" 
+                  alt="Viewer at 375px mobile" 
+                  style="width: 100%; border-radius: 12px; margin: 12px 0;"
+                />
+                
+                <!-- Cross browser testing on Chrome and Safari -->
+                <h3>Cross Browser Testing</h3>
+                <p>
+                  
+                  tested on Chrome and Safari on macOS
+
+                </p>
+                <p> Chrome........... </p>
+                <img 
+                  src="./assets/images/chrome.png" 
+                  alt="Viewer at 375px mobile" 
+                  style="width: 100%; border-radius: 12px; margin: 12px 0;"
+                />
+                <p> Safari........... </p>
+                <img 
+                  src="./assets/images/safari.png" 
+                  alt="Viewer at 375px mobile" 
+                  style="width: 100%; border-radius: 12px; margin: 12px 0;"
+                />
+
+                <!-- Cross platform on iPhone and laptop-->
+                <h3>Cross Platform Testing</h3>
+                <p>
+                The site was tested on macOS on a laptop and on an iPhone connecting to the same WiFi and accessing the local server 
+                via the IP address and the webapp resized properly to the size of the phone. </p>
+                <img 
+                  src="./assets/images/phone.png" 
+                  alt="Viewer at 375px mobile" 
+                  style="width: 100%; max-width: 300px; border-radius: 12px; margin: 12px 0;"
+                />
+
+
+                <!-- Usability testing my roommates' reviews -->
+                <h3> Usability Testing</h3>
+                <p>
+                  I shared the site with my roomates. They thought the webapp was very pleasing to the eye and cool with 
+                  the 3d models. They're interior architecture students and are familiar with 3d models / rendering and loved the way my models looked realistic
+                  .They also loved the concept of incorperating my heritiage and applauded my creativity.
+                  They were surprised at the audio the models had and said " oh my god how did you do that !!!". 
+                </p>
+                 <img 
+                  src="./assets/images/bffs1.png" 
+                  style="width: 100%; max-width: 600px; border-radius: 12px; margin: 12px 0;"
+                  />
+
+                <img 
+                  src="./assets/images/bffs2.png" 
+                  style="width: 100%; max-width: 600px; border-radius: 12px; margin: 12px 0;"
+                  />
+
+
+                <!-- Visual testing -->
+                <h3> Visual Testing</h3>
+                <p>
+                   The brand colours, typography and card layouts were consistent across all pages. 
+                   The colours were visually pleasing and the photos incorporated further tied everything together.
+                   The colour scheme is meant to be soft and not too much due to the patterns and pictures already there.
+                   It was important to make the colour scheme also relevant to palestine, the colour scheme as you notice has 
+                   slight incorporations of the colours of the flag like the green for the olive branch , red for buttons and title, 
+                   black text and soft white bakcground, yet making sure not to overdo it to keep the simple clean accessible look.
+                </p>
+
+                <!-- Accessibility testing -->
+                   <h3> Accessibility Testing</h3>
+                <p>
+                    Model status label updates automatically so users can see when its loading. 
+                   I also made sure all text is readable with the colour choices and not harsh on the eyes
+                   and to not overwhelm the page with many pictures when the testing screenshots began,
+                   so that its easily reeadable and not overstimulating for the users when theres too much going on.
+                   Kept the home page to the point and not too overwhelming so that users can clearly understand and click the buttons to view
+                   the models.
+
+                </p>
+
+                <h3> Bloopers....</h3>
+                <p>
+                  Attempting to get the labels after not finding them online :( 
+                
+                </p>
+                <img
+                    src="./assets/images/bloopers.PNG"
+                    alt="image"
+                    style="width: 100%; max-width: 300px; border-radius: 12px; margin: 12px 0;"
+                  />
+
+
+                </article>
+              </div>
+                  <p>
+
+                    
+                    :)
+
+
+
+                  </p>
+
+
+                  
+                </article>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <!--finally the footer :) -->
+    <footer class="gc-footer-light">
+      <div class="container text-center">
+        <p class="mb-1">Taste of Freedom</p>
+        <small>My 3d Model :)  </small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

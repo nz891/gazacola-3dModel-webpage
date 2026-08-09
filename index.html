@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaza Cola | Taste of Freedom</title>
+
+    <meta
+      name="description"
+      content="Taste of Freedom..."
+    />
+
+    <!-- Bootstrap for layout and grid-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts Cormorant Garamond for headings, Inter for body, Great Vibes for title -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- custom CSS with brand colours, variables and all the styling -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="site-body-light">
+
+     <!-- Header -->
+    <header class="gc-header sticky-top">
+      <div class="container-fluid gc-header-container">
+        <div class="gc-header-bar">
+
+           <!-- Hamburger button opens the offcanvas side menu -->
+          <button
+            class="gc-menu-btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#siteMenu"
+            aria-controls="siteMenu"
+            aria-label="Open menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <!-- Brand name in English and Arabic , clicking it takes you to homepage -->
+          <a
+            href="./index.html"
+            class="gc-brand text-decoration-none"
+            aria-label="Gaza Cola home"
+          >
+            <span class="gc-brand-en">Cola Gaza</span>
+            <span class="gc-brand-divider"></span>
+            <span class="gc-brand-ar">غزة كولا</span>
+          </a>
+
+          <!-- Icon button clicking takes you to the about page -->
+          <div class="gc-header-actions">
+            <a
+              href="./about.html"
+              class="gc-icon-btn text-decoration-none"
+              aria-label="About"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M6 8h12l-1 11H7L6 8Z"></path>
+                <path d="M9 8a3 3 0 0 1 6 0"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- nav menu -->
+    <div
+      class="offcanvas offcanvas-start gc-offcanvas"
+      tabindex="-1"
+      id="siteMenu"
+      aria-labelledby="siteMenuLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="siteMenuLabel">Menu</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <nav class="gc-menu-nav">
+          <a href="./index.html">Home</a>
+          <a href="./viewer.html?product=red-can">Red Gaza Cola Can</a>
+          <a href="./viewer.html?product=white-bottle">White Palestine Cola Bottle</a>
+          <a href="./viewer.html?product=white-can">White Palestine Cola Can</a>
+          <a href="./about.html">About</a>
+        </nav>
+      </div>
+    </div>
+
+     <!-- Hero section with the olive branch picture, title and 3 models cards -->
+    <main>
+      <section class="gc-home-hero gc-home-hero-redesign">
+        <div class="container gc-home-shell">
+          <div class="gc-title-region text-center position-relative">
+            <div class="gc-olive-branch gc-olive-branch-home" aria-hidden="true">
+              <img
+                src="./assets/images/olive.png"
+                alt=""
+                class="gc-olive-image"
+              />
+            </div>
+
+            <h1 class="gc-home-title">Taste of Freedom</h1>
+            <p class="gc-home-intro">
+              My personal touch of home viewed through the lens of this webapp :)
+            </p>
+          </div>
+
+           <!-- 3 models showcased using cards stacked vertically -->
+          <div class="gc-home-product-stack">
+            <article class="gc-home-feature-card gc-home-feature-red">
+              <div class="gc-home-feature-visual">
+                <div class="gc-home-feature-visual-inner">
+                  <img
+                    src="./assets/images/gazacan.jpg"
+                    alt="Gaza Cola red can"
+                    class="gc-home-feature-image gc-home-feature-image-can"
+                  />
+                </div>
+              </div>
+
+              <div class="gc-home-feature-content">
+                <span class="gc-home-feature-tag">Model 1</span>
+                <h2>Gaza Cola Can</h2>
+                <p>
+                  This is the first 3d model, Gaza Cola Can, Instead of buying regular Pepsi or cola, shop Gaza Cola on gazacola.shop to help raise charity!!
+                </p>
+
+                <div class="gc-home-feature-points">
+                  <span>gazacola.shop</span>
+                </div>
+
+                <a
+                  href="./viewer.html?product=red-can"
+                  class="btn gc-primary-btn gc-pill-btn"
+                >
+                  Click here to view this 3d model...
+                </a>
+              </div>
+            </article>
+
+            <article class="gc-home-feature-card gc-home-feature-light">
+              <div class="gc-home-feature-visual">
+                <div class="gc-home-feature-visual-inner">
+                  <img
+                    src="./assets/images/palestine-can.jpg"
+                    alt="White can product"
+                    class="gc-home-feature-image gc-home-feature-image-can"
+                  />
+                </div>
+              </div>
+
+              <div class="gc-home-feature-content">
+                <span class="gc-home-feature-tag">Model 2</span>
+                <h2>Palestine Cola Can</h2>
+                <p>
+                  This is the second 3d model, Palestine Cola Can. Shop on palestine-cola.co.uk to help raise charity!!
+                </p>
+
+                <div class="gc-home-feature-points">
+                  <span>palestine-cola.co.uk</span>
+                </div>
+
+                <a
+                  href="./viewer.html?product=white-can"
+                  class="btn gc-primary-btn gc-pill-btn"
+                >
+                  Click here to view this 3d model...
+                </a>
+              </div>
+            </article>
+
+            <article class="gc-home-feature-card gc-home-feature-bottle">
+              <div class="gc-home-feature-visual">
+                <div class="gc-home-feature-visual-inner">
+                  <img
+                    src="./assets/images/bottlepic.png"
+                    alt="White bottle product"
+                    class="gc-home-feature-image gc-home-feature-image-bottle"
+                  />
+                </div>
+              </div>
+
+              <div class="gc-home-feature-content">
+                <span class="gc-home-feature-tag">Model 3</span>
+                <h2>Palestine Cola Bottle</h2>
+                <p>
+                  This is the third 3d model, Palestine Cola Bottle, the same as the Palestine Cola can but bottle version. Shop at palestine-cola.co.uk to help raise charity!!
+                </p>
+
+                <div class="gc-home-feature-points">
+                  <span>palestine-cola.co.uk</span>
+                </div>
+
+                <a
+                  href="./viewer.html?product=white-bottle"
+                  class="btn gc-primary-btn gc-pill-btn"
+                >
+                  Click here to view this 3d model...
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+     <!-- and finally footer  -->
+    <footer class="gc-footer-light">
+      <div class="container text-center">
+        <p class="mb-1">Taste of Freedom</p>
+        <small>My 3d Model</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
