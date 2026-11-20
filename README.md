@@ -35,11 +35,17 @@ the cans and bottle in Blender and display them in the browser with Three.js.
 Three.js r160 (GLTFLoader, DRACOLoader, OrbitControls, AnimationMixer), Blender,
 Bootstrap 5, Web Audio API, HTML, CSS, JavaScript
 
+## Live demo
+**View the site here:https://nz891.github.io/gazacola-3dModel-webpage/**
+
 ## Running locally
-The models are loaded with `fetch`, so the site needs a local server rather than opening the file directly:
+The models are loaded with `fetch`, so opening `index.html` directly won't work. Start a
+local server in the project folder instead:
+
 ```
 python3 -m http.server 8000
 ```
+
 Then open http://localhost:8000
 
 ## Testing
